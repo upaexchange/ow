@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title data-i18n="html_title"></title>
+        <meta name="description" data-i18n-content="html_content">
+        
+
+        <!-- font awesome -->
+        <link rel="stylesheet" href="static/css/all.min.css">
+        <!-- bootstraph -->
+        <link rel="stylesheet" href="static/css/bootstrap.min.css">
+        <!-- accordion -->
+        <link rel="stylesheet" href="static/css/accordion.css">
+        <!-- Swiper js -->
+        <link rel="stylesheet" href="static/css/swiper-bundle.min.css">
+        <!-- Aos Animation -->
+        <link rel="stylesheet" href="static/css/aos.css">
+        <!-- User's CSS Here -->
+        <link rel="stylesheet" href="static/css/style.css">
+        <!-- Flag's CSS Here -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons/css/flag-icons.min.css">
+    </head>
+    <body>
+        <!-- Preloader Start -->
+        <div class="preloader__wrapper">
+            <div id="loader-wrapper">
+                <div id="loader"></div>
+                <div class="loader-section section-left"></div>
+                <div class="loader-section section-right"></div>
+            </div>
+        </div>
+        <!-- Preloader End -->
+        <!-- Header Start -->
+        <header class="header header-sticky">
+            <nav class="nav">
+                <div class="container">
+                    <div class="header__wrapper">
+                        <!-- Header Logo End -->
+                        <div class="header__logo">
+                            <a href="index.html">
+                                <img src="static/picture/logo.png" alt="logo">
+                            </a>
+                        </div>
+                        <!-- Header Logo End -->
+                        <!-- Header Menu Start -->
+                        <div class="header__menu">
+                            <ul class="main__menu">
+                                <li><a href="index.html" data-i18n="home"></a></li>
+                                <li class="has__dropdown">
+                                    <a href="#" data-i18n="nav"></a>
+                                    <ul class="sub__menu">
+                                        <li><a class="scroll-to-target" data-target=".contact__section" data-i18n="contact_us"></a></li>
+                                        <!-- <li><a class="scroll-to-target" data-target=".map__section" data-i18n="position"></a></li> -->
+                                    </ul>
+                                </li>
+                                <li><a href="about.html" data-i18n="about"></a></li>
+                                <li><a href="roadmap.html" data-i18n="roadmap"></a></li>
+                                <li><a href="team.html" data-i18n="teams"></a></li>
+                                <li><a href="" class="active" data-i18n="contact"></a></li>
+                            </ul>
+                        </div>
+                        <!-- Header Menu End -->
+                        <!-- Header Meta Start -->
+                        <div class="header__meta header__menu">
+                            <ul class="meta__list main__menu">
+                                <li class="has__dropdown">
+                                    <a class="header__lang header__lang-primary">
+                                        <span id="lang-flag" class="fi fi-br"></span>
+                                        <span class="header__lang-text" data-i18n="lang"></span>
+                                    </a>
+                                    <ul class="sub__menu">
+                                        <li><a data-i18n="lang-zh" onclick="changeLanguage('zh')"></a></li>
+                                        <li><a data-i18n="lang-en" onclick="changeLanguage('en')"></a></li>
+                                        <li><a data-i18n="lang-br" onclick="changeLanguage('br')"></a></li>
+                                        <li><a data-i18n="lang-kr" onclick="changeLanguage('kr')"></a></li>
+                                        <li><a data-i18n="lang-jp" onclick="changeLanguage('jp')"></a></li>
+                                        <li><a data-i18n="lang-es" onclick="changeLanguage('es')"></a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <!-- Header Toggle Start -->
+                            <div class="header__toggle">
+                                <div class="toggle__bar"></div>
+                            </div>
+                            <!-- Hrader Toggle End -->
+                        </div>
+
+                        <div class="header__meta" hidden>
+                            <ul class="meta__list">
+                                <li>
+                                    <a href="#" class="btn btn-primary">Login<i class="fa-solid fa-user"></i></a>
+                                </li>
+                            </ul>
+                            <!-- Header Toggle Start -->
+                            <div class="header__toggle">
+                                <div class="toggle__bar"></div>
+                            </div>
+                            <!-- Hrader Toggle End -->
+                        </div>
+                        <!-- Header Meta End -->
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- Header End -->
+
+        <!-- Page Banner Start -->
+        <div class="page__banner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="pageBanner__title">
+                            <h1 class="title" data-i18n="contact_us"></h1>
+                            <div class="link">
+                                <a href="index.html" data-i18n="home"></a>
+                                <i class="fa-solid fa-arrow-right"></i>
+                                <span data-i18n="contact"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Page Banner End -->
+
+        <!-- Contact Secton Start -->
+        <section class="contact__section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="section__title text-center">
+                            <h2 class="title" data-i18n="contact_please"></h2>
+                            <p class="desc" data-i18n="contact_please_desc"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-10 m-auto">
+                        <div class="contactBox__wrapper" data-aos="fade-up" data-aos-duration="1000">
+<!--                             <div class="contactBox">
+                                <div class="contactBox__icon">
+                                    <img src="static/picture/phone.png" alt="icon">
+                                </div>
+                                <div class="contactBox__inform">
+                                    <a href="tel:810012313312">+8100-123-13312</a>
+                                    <a href="tel:810012313313">+8100-123-13313</a>
+                                </div>
+                            </div> -->
+                            <div></div>
+                            <div class="contactBox">
+                                <div class="contactBox__icon">
+                                    <img src="static/picture/email.png" alt="icon">
+                                </div>
+                                <div class="contactBox__inform">
+                                    <a href="mailto:ab@upaexchange.com">ab@upaexchange.com</a>
+                                    <a href="mailto:ab@upaexchange.com">ab@upaexchange.com</a>
+                                </div>
+                            </div>
+                            <div></div>
+<!--                             <div class="contactBox">
+                                <div class="contactBox__icon">
+                                    <img src="static/picture/location.png" alt="icon">
+                                </div>
+                                <div class="contactBox__inform">
+                                    <p>75 Arlington St. Suite 500 Boston, MA 02116, USA.</p>
+                                </div>
+                            </div> -->
+                        </div>
+                        <!-- Contact Form Start -->
+                        <div class="contact__wrapper" data-aos="fade-up" data-aos-duration="1000">
+                            <form action="#" method="post" class="contact__form">
+                                <!-- Flex Input -->
+                                <div class="flex__input">
+                                    <div class="form__group">
+                                        <input type="text" name="text" class="form-control" placeholder="Your Name" required="">
+                                    </div>
+                                    <div class="form__group">
+                                        <input type="text" name="text" class="form-control" placeholder="Your Email" required="">
+                                    </div>
+                                </div>
+                                <!-- Flex Input -->
+                                <div class="flex__input">
+                                    <div class="form__group">
+                                        <input type="text" name="text" class="form-control" placeholder="Website" required="">
+                                    </div>
+                                    <div class="form__group">
+                                        <input type="text" name="text" class="form-control" placeholder="Subject" required="">
+                                    </div>
+                                </div>
+                                <div class="form__group">
+                                    <textarea class="form-control text__area" placeholder="Your Message" spellcheck="false"></textarea>
+                                </div>
+                                <div class="btn__submit text-center">
+                                    <button type="submit" class="btn btn-primary">Send Message</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact Secton End -->
+
+        <!-- Location Start -->
+<!--         <section class="map__section bg-pattern">
+            <div class="container">
+                <div class="row">
+                    <div class="section__title text-center" data-aos="fade-up" data-aos-duration="1000">
+                        <h2 class="title" data-i18n="position"></h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div id="map" data-aos="fade-up" data-aos-duration="1000">
+                            <iframe src="embed.html" style="border: 0" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        <!-- Location End -->
+
+        <!-- Footer Section Start -->
+        <footer class="footer__section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <button class="scroll-top scroll-to-target" data-target="html">
+                            <i class="fa-solid fa-arrow-up"></i>
+                        </button>
+                        <div class="document__wrapper">
+                            <!-- <h4 class="document__title">Read Documents</h4> -->
+                            <!-- <div class="document__list">
+                                <a id="whitepaper-link" href="http://www.UPAExchange.cn/static/files/UPAExchange-Whitepaper-zh.pdf" download="UPAExchange-Whitepaper.pdf">
+                                    <span class="icon"><i class="fas fa-file-pdf"></i></span>
+                                    <span data-i18n="whitepaper"></span>
+                                </a>
+                                <a href="#">
+                                    <span class="icon"><i class="fas fa-file-pdf"></i></span>
+                                    Token Sale Terms
+                                </a>
+                                <a href="#">
+                                    <span class="icon"><i class="fas fa-file-pdf"></i></span>
+                                    Presentation
+                                </a>
+                                <a href="#">
+                                    <span class="icon"><i class="fas fa-file-pdf"></i></span>
+                                    Lightpaper
+                                </a>
+                            </div> -->
+                        </div>
+
+                        <div class="footer__widget">
+                            <div class="logo">
+                                <a href="index.html"><img src="static/picture/logo.png" alt="logo"></a>
+                            </div>
+                            <!-- <ul class="footer__social">
+                                <li>
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                </li>
+                            </ul> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="footer__content text-center">
+                                <div class="content">
+                                    <p>
+                                        Copyright &copy; 2025.UPAExchange All rights reserved.
+                                    </p>
+                                </div>
+                                <ul class="link">
+                                    <li><a href="index.html" data-i18n="privacy"></a></li>
+                                    <li><a href="about.html" data-i18n="about"></a></li>
+                                    <li><a href="team.html" data-i18n="teams"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer Section End -->
+
+        <!-- Header Flyout Menu Start -->
+        <div class="flyoutMenu">
+            <div class="flyout__flip">
+                <div class="flyout__inner">
+                    <div class="menu__header-top">
+                        <div class="brand__logo">
+                            <a href="index.html"><img src="static/picture/logo.png" alt="logo"></a>
+                        </div>
+                        <!-- Close -->
+                        <div class="closest__btn">
+                            <i class="fas fa-close"></i>
+                        </div>
+                        <!-- Close -->
+                    </div>
+                    <div class="flyout__menu">
+                        <ul class="flyout-main__menu">
+                            <ul class="flyout-main__menu">
+                                <li><a href="index.html" data-i18n="home"></a></li>
+                                <li class="has__dropdown">
+                                    <a href="#" class="nav__link" data-i18n="nav"></a>
+                                    <ul class="sub__menu">
+                                        <li><a class="scroll-to-target" data-target=".contact__section" data-i18n="contact"></a></li>
+                                        <li><a class="scroll-to-target" data-target=".map__section" data-i18n="position"></a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="about.html" data-i18n="about"></a></li>
+                                <li><a href="roadmap.html" data-i18n="roadmap"></a></li>
+                                <li><a href="team.html" data-i18n="teams"></a></li>
+                                <li><a href="" class="active" data-i18n="contact"></a></li>
+                            </ul>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Header Flyout Menu End -->
+
+        <!-- JS -->
+        <script src="static/js/jquery-3.6.0.min.js"></script>
+        <script src="static/js/bootstrap.min.js"></script>
+        <script src="static/js/bootstrap.bundle.min.js"></script>
+        <script src="static/js/swiper-bundle.min.js"></script>
+        <script src="static/js/aos.js"></script>
+        <script src="static/js/accordion.min.js"></script>
+        <script src="static/js/jquery.syotimer.min.js"></script>
+        <script src="static/js/scripts.js"></script>
+        <script src="https://unpkg.com/i18next@22.4.10/dist/umd/i18next.min.js"></script>
+        <script src="static/js/i18n-resources.js"></script>  <!-- 先加载资源 -->
+        <script src="static/js/i18n-init.js"></script>       <!-- 最后加载主逻辑 -->
+    </body>
+</html>

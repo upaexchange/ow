@@ -1,0 +1,1078 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title data-i18n="html_title"></title>
+        <meta name="description" data-i18n-content="html_content">
+        
+
+        <!-- font awesome -->
+        <link rel="stylesheet" href="static/css/all.min.css">
+        <!-- bootstraph -->
+        <link rel="stylesheet" href="static/css/bootstrap.min.css">
+        <!-- accordion -->
+        <link rel="stylesheet" href="static/css/accordion.css">
+        <!-- Swiper js -->
+        <link rel="stylesheet" href="static/css/swiper-bundle.min.css">
+        <!-- Aos Animation -->
+        <link rel="stylesheet" href="static/css/aos.css">
+        <!-- User's CSS Here -->
+        <link rel="stylesheet" href="static/css/style.css">
+        <!-- Flag's CSS Here -->
+        <link rel="stylesheet" href="static/css/flag-icons.min.css">
+    </head>
+    <body>
+        <!-- Preloader Start -->
+        <div class="preloader__wrapper">
+            <div id="loader-wrapper">
+                <div id="loader"></div>
+                <div class="loader-section section-left"></div>
+                <div class="loader-section section-right"></div>
+            </div>
+        </div>
+        <!-- Preloader End -->
+
+        <!-- Header Start -->
+        <header class="header header-sticky">
+            <nav class="nav">
+                <div class="container">
+                    <div class="header__wrapper">
+                        <!-- Header Logo End -->
+                        <div class="header__logo">
+                            <a href="index.html">
+                                <img src="static/picture/logo.png" alt="logo">
+                            </a>
+                        </div>
+                        <!-- Header Logo End -->
+                        <!-- Header Menu Start -->
+                        <div class="header__menu">
+                            <ul class="main__menu">
+                                <li><a href="" class="active" data-i18n="home"></a></li>
+                                <li class="has__dropdown">
+                                    <a href="#" data-i18n="nav"></a>
+                                    <ul class="sub__menu">
+                                        <li><a class="scroll-to-target" data-target=".about__section" data-i18n="intro"></a></li>
+                                        <li><a class="scroll-to-target" data-target=".feature__section" data-i18n="products"></a></li>
+                                        <li><a class="scroll-to-target" data-target=".blog__section" data-i18n="ecosystem"></a></li>
+                                        <li><a class="scroll-to-target" data-target=".timeline__section" data-i18n="roadmap"></a></li>
+                                        <li><a class="scroll-to-target" data-target=".team__section" data-i18n="team"></a></li>
+                                        <li><a class="scroll-to-target" data-target=".partner__section" data-i18n="partners"></a></li>
+                                        <!-- <li><a class="scroll-to-target" data-target=".call__to__action" data-i18n="subscribe"></a></li> -->
+                                    </ul>
+                                </li>
+                                <li><a href="about.html" data-i18n="about"></a></li>
+                                <li><a href="roadmap.html" data-i18n="roadmap"></a></li>
+                                <li><a href="team.html" data-i18n="teams"></a></li>
+                                <li><a href="contact.html" data-i18n="contact"></a></li>
+                            </ul>
+                        </div>
+                        <!-- Header Menu End -->
+                        <!-- Header Meta Start -->
+                        <div class="header__meta header__menu">
+                            <ul class="meta__list main__menu">
+                                <li class="has__dropdown">
+                                    <a class="header__lang header__lang-primary">
+                                        <span id="lang-flag" class="fi fi-br"></span>
+                                        <span class="header__lang-text" data-i18n="lang"></span>
+                                    </a>
+                                    <ul class="sub__menu">
+                                        <li><a data-i18n="lang-zh" onclick="changeLanguage('zh')"></a></li>
+                                        <li><a data-i18n="lang-en" onclick="changeLanguage('en')"></a></li>
+                                        <li><a data-i18n="lang-br" onclick="changeLanguage('br')"></a></li>
+                                        <li><a data-i18n="lang-kr" onclick="changeLanguage('kr')"></a></li>
+                                        <li><a data-i18n="lang-jp" onclick="changeLanguage('jp')"></a></li>
+                                        <li><a data-i18n="lang-es" onclick="changeLanguage('es')"></a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <!-- Header Toggle Start -->
+                            <div class="header__toggle">
+                                <div class="toggle__bar"></div>
+                            </div>
+                            <!-- Hrader Toggle End -->
+                        </div>
+
+                        <div class="header__meta" hidden>
+                            <ul class="meta__list">
+                                <li>
+                                    <a href="#" class="btn btn-primary">Login<i class="fa-solid fa-user"></i></a>
+                                </li>
+                            </ul>
+                            <!-- Header Toggle Start -->
+                            <div class="header__toggle">
+                                <div class="toggle__bar"></div>
+                            </div>
+                            <!-- Hrader Toggle End -->
+                        </div>
+                        <!-- Header Meta End -->
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- Header End -->
+
+        <!-- Banner Section Start -->
+        <section class="banner__section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="hero__text text-left">
+                            <h4 class="sub__title"><span>$</span><em data-i18n="slogan"></em></h4>
+                            <h1 class="title" data-i18n="banner_title"></h1>
+                            <p class="desc" data-i18n="banner_desc"></p>
+                            <div class="btn__group">
+                                <a href="contact.html" class="btn btn-primary" data-i18n="contact"></a>
+                                <a class="btn btn-outline" data-i18n="app_download"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="hero__figure">
+                            <img src="static/picture/banner-img.png" alt="banner-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Banner Section End -->
+
+        <!-- About Section Start -->
+        <section class="about__section">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="about__figure" data-aos="fade-right" data-aos-duration="1000">
+                            <img src="static/picture/about_img.png" alt="about">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="about__content" data-aos="fade-left" data-aos-duration="1000">
+                            <h4 class="about__subtitle" data-i18n="intro"></h4>
+                            <h2 class="about__title" data-i18n="intro_title"></h2>
+                            <p class="about__desc" data-i18n="intro_desc"></p>
+                            <ul class="list__item">
+                                <li><i class="fa-solid fa-check"></i><span data-i18n="intro_asset"></span></li>
+                                <li><i class="fa-solid fa-check"></i><span data-i18n="intro_privacy"></span></li>
+                                <li><i class="fa-solid fa-check"></i><span data-i18n="intro_scalability"></span></li>
+                                <li><i class="fa-solid fa-check"></i><span data-i18n="intro_security"></span></li>
+                                <!-- <li><i class="fa-solid fa-check"></i>Token Sale Phases</li> -->
+                                <!-- <li><i class="fa-solid fa-check"></i>Exchange Listing</li> -->
+                            </ul>
+                            <div class="about__btn">
+                                <a href="about.html" class="btn btn-primary" data-i18n="about"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About Section End -->
+
+        <!-- Feature Section Start -->
+        <section class="feature__section bg-pattern">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="section__title text-center" data-aos="fade-up" data-aos-duration="1000">
+                            <h2 class="title" data-i18n="products"></h2>
+                            <p class="desc" data-i18n="products_desc"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="featureBox" data-aos="fade-up" data-aos-duration="1000">
+                            <div class="featureBox__icon">
+                                <img src="static/picture/several-profit.png" alt="icon">
+                            </div>
+                            <div class="featureBox__content">
+                                <h4 class="title">
+                                    <a href="#" data-i18n="products_spot"></a>
+                                </h4>
+                                <p class="desc" data-i18n="products_spot_desc"></p>
+                            </div>
+                            <div class="featureBox__overlay"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="featureBox" data-aos="fade-up" data-aos-duration="1000">
+                            <div class="featureBox__icon">
+                                <img src="static/picture/low-cost.png" alt="icon">
+                            </div>
+                            <div class="featureBox__content">
+                                <h4 class="title">
+                                    <a href="#" data-i18n="products_derivatives"></a>
+                                </h4>
+                                <p class="desc" data-i18n="products_derivatives_desc"></p>
+                            </div>
+                            <div class="featureBox__overlay"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="featureBox" data-aos="fade-up" data-aos-duration="1000">
+                            <div class="featureBox__icon">
+                                <img src="static/picture/universal-access.png" alt="icon">
+                            </div>
+                            <div class="featureBox__content">
+                                <h4 class="title">
+                                    <a href="#" data-i18n="products_defi"></a>
+                                </h4>
+                                <p class="desc" data-i18n="products_defi_desc"></p>
+                            </div>
+                            <div class="featureBox__overlay"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="featureBox" data-aos="fade-up" data-aos-duration="1000">
+                            <div class="featureBox__icon">
+                                <img src="static/picture/secure-storage.png" alt="icon">
+                            </div>
+                            <div class="featureBox__content">
+                                <h4 class="title">
+                                    <a href="#" data-i18n="products_services"></a>
+                                </h4>
+                                <p class="desc" data-i18n="products_services_desc"></p>
+                            </div>
+                            <div class="featureBox__overlay"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="featureBox" data-aos="fade-up" data-aos-duration="1000">
+                            <div class="featureBox__icon">
+                                <img src="static/picture/early-bonus.png" alt="icon">
+                            </div>
+                            <div class="featureBox__content">
+                                <h4 class="title">
+                                    <a href="#" data-i18n="products_support"></a>
+                                </h4>
+                                <p class="desc" data-i18n="products_support_desc"></p>
+                            </div>
+                            <div class="featureBox__overlay"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="featureBox" data-aos="fade-up" data-aos-duration="1000">
+                            <div class="featureBox__icon">
+                                <img src="static/picture/safe-secure.png" alt="icon">
+                            </div>
+                            <div class="featureBox__content">
+                                <h4 class="title">
+                                    <a href="#" data-i18n="products_security"></a>
+                                </h4>
+                                <p class="desc" data-i18n="products_security_desc"></p>
+                            </div>
+                            <div class="featureBox__overlay"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Feature Section End -->
+
+        <!-- Blog Section Start -->
+        <section class="blog__section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="section__title text-center" data-aos="fade-up" data-aos-duration="1000">
+                            <h2 class="title" data-i18n="ecosystem"></h2>
+                            <p class="desc" data-i18n="ecosystem_desc"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="blogPost__item" data-aos="fade-up" data-aos-duration="1000">
+                            <div class="blog__figure">
+                                <img src="static/picture/blog-01.jpg" alt="blog_image">
+                            </div>
+                            <div class="blog__content">
+                                <div class="blog__meta">
+                                    <span><a data-i18n="ecosystem_support"></a></span>
+                                    <span data-i18n="ecosystem_support_subtitle"></span>
+                                </div>
+                                <h4>
+                                    <a data-i18n="ecosystem_support_title"></a>
+                                </h4>
+                                <p data-i18n="ecosystem_support_desc"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="blogPost__item" data-aos="fade-up" data-aos-duration="1000">
+                            <div class="blog__figure">
+                                <img src="static/picture/blog-02.jpg" alt="blog_image">
+                            </div>
+                            <div class="blog__content">
+                                <div class="blog__meta">
+                                    <span><a data-i18n="ecosystem_security"></a></span>
+                                    <span data-i18n="ecosystem_security_subtitle"></span>
+                                </div>
+                                <h4>
+                                    <a data-i18n="ecosystem_security_title"></a>
+                                </h4>
+                                <p data-i18n="ecosystem_security_desc"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="blogPost__item" data-aos="fade-up" data-aos-duration="1000">
+                            <div class="blog__figure">
+                                <img src="static/picture/blog-03.jpg" alt="blog_image">
+                            </div>
+                            <div class="blog__content">
+                                <div class="blog__meta">
+                                    <span><a data-i18n="ecosystem_mining"></a></span>
+                                    <span data-i18n="ecosystem_mining_subtitle"></span>
+                                </div>
+                                <h4>
+                                    <a data-i18n="ecosystem_mining_title"></a>
+                                </h4>
+                                <p data-i18n="ecosystem_mining_desc"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Blog Section End -->
+
+        <!-- Token Section Start -->
+        <section class="token__section" hidden>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="section__title text-center" data-aos="fade-up" data-aos-duration="1000">
+                            <h2 class="title">Token allocation & funds distribution</h2>
+                            <p class="desc">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem labore rerum at
+                                maxime! Voluptatibus numquam blanditiis odit rerum.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="tabs__wrapper" data-aos="fade-up" data-aos-duration="1000">
+                            # main Tabs here -->
+                            <div class="main__tabs">
+                                <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link active" id="mainOne-tab" data-bs-toggle="pill" data-bs-target="#mainOne" type="button" role="tab" aria-controls="mainOne" aria-selected="true">
+                                            Token Allocation
+                                        </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="mainTwo-tab" data-bs-toggle="pill" data-bs-target="#mainTwo" type="button" role="tab" aria-controls="mainTwo" aria-selected="false">
+                                            Funds Allocation
+                                        </button>
+                                    </li>
+                                </ul>
+                                <div class="tab-content" id="pills-tabContent">
+                                    <div class="tab-pane fade show active" id="mainOne" role="tabpanel" aria-labelledby="mainOne-tab" tabindex="0">
+                                        <div class="tab__body">
+                                            <div class="flex__token">
+                                                <div class="token__progress">
+                                                    <!-- token Wrapper
+                                                    <div class="token__wrapper">
+                                                        <div class="token__info">
+                                                            <h5 class="token__title">Public Sale</h5>
+                                                            <h5 class="token__strength">10%</h5>
+                                                        </div>
+                                                        <div class="current__progress">
+                                                            <div class="progress__bar fill-one" style="width: 10%"></div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- token Wrapper -->
+                                                    <div class="token__wrapper">
+                                                        <div class="token__info">
+                                                            <h5 class="token__title">Private Sale</h5>
+                                                            <h5 class="token__strength">40%</h5>
+                                                        </div>
+                                                        <div class="current__progress">
+                                                            <div class="progress__bar fill-two" style="width: 40%"></div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- token Wrapper -->
+                                                    <div class="token__wrapper">
+                                                        <div class="token__info">
+                                                            <h5 class="token__title">Board Advisors</h5>
+                                                            <h5 class="token__strength">15%</h5>
+                                                        </div>
+                                                        <div class="current__progress">
+                                                            <div class="progress__bar fill-three" style="width: 15%"></div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- token Wrapper -->
+                                                    <div class="token__wrapper">
+                                                        <div class="token__info">
+                                                            <h5 class="token__title">Token Sale</h5>
+                                                            <h5 class="token__strength">20%</h5>
+                                                        </div>
+                                                        <div class="current__progress">
+                                                            <div class="progress__bar fill-four" style="width: 20%"></div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- token Wrapper -->
+                                                    <div class="token__wrapper">
+                                                        <div class="token__info">
+                                                            <h5 class="token__title">Reserve Fund</h5>
+                                                            <h5 class="token__strength">30%</h5>
+                                                        </div>
+                                                        <div class="current__progress">
+                                                            <div class="progress__bar fill-five" style="width: 30%"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="token__image">
+                                                    <img src="static/picture/token-graph-1.png" alt="token">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="mainTwo" role="tabpanel" aria-labelledby="mainTwo-tab" tabindex="0">
+                                        <div class="tab__body">
+                                            <div class="flex__token">
+                                                <div class="token__progress">
+                                                    <!-- token Wrapper -->
+                                                    <div class="token__wrapper">
+                                                        <div class="token__info">
+                                                            <h5 class="token__title">Contingency</h5>
+                                                            <h5 class="token__strength">17%</h5>
+                                                        </div>
+                                                        <div class="current__progress">
+                                                            <div class="progress__bar fill-one" style="width: 17%"></div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- token Wrapper -->
+                                                    <div class="token__wrapper">
+                                                        <div class="token__info">
+                                                            <h5 class="token__title">Legal & Regulation</h5>
+                                                            <h5 class="token__strength">30%</h5>
+                                                        </div>
+                                                        <div class="current__progress">
+                                                            <div class="progress__bar fill-two" style="width: 30%"></div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- token Wrapper -->
+                                                    <div class="token__wrapper">
+                                                        <div class="token__info">
+                                                            <h5 class="token__title">Ecosystem</h5>
+                                                            <h5 class="token__strength">40%</h5>
+                                                        </div>
+                                                        <div class="current__progress">
+                                                            <div class="progress__bar fill-three" style="width: 40%"></div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- token Wrapper -->
+                                                    <div class="token__wrapper">
+                                                        <div class="token__info">
+                                                            <h5 class="token__title">Team & Founders</h5>
+                                                            <h5 class="token__strength">60%</h5>
+                                                        </div>
+                                                        <div class="current__progress">
+                                                            <div class="progress__bar fill-four" style="width: 60%"></div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- token Wrapper -->
+                                                    <div class="token__wrapper">
+                                                        <div class="token__info">
+                                                            <h5 class="token__title">Partners</h5>
+                                                            <h5 class="token__strength">9%</h5>
+                                                        </div>
+                                                        <div class="current__progress">
+                                                            <div class="progress__bar fill-five" style="width: 9%"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="token__image">
+                                                    <img src="static/picture/token-graph-2.png" alt="token">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Main Tabs here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Token Section End -->
+
+        <!-- Timeline Section Start -->
+        <section class="timeline__section bg-pattern">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="section__title text-center" data-aos="fade-up" data-aos-duration="1000">
+                            <h2 class="title" data-i18n="roadmap"></h2>
+                            <p class="desc" data-i18n="roadmap_desc"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <ul class="timeline">
+                            <li data-aos="fade-up" data-aos-duration="1000">
+                                <div class="content">
+                                    <h4 class="title" data-i18n="roadmap_data_1_title"></h4>
+                                    <span class="education" data-i18n="roadmap_data_1"></span>
+                                    <p class="desc" data-i18n="roadmap_data_1_desc"></p>
+                                </div>
+                            </li>
+                            <li data-aos="fade-up" data-aos-duration="1000">
+                                <div class="content">
+                                    <h4 class="title" data-i18n="roadmap_data_2_title"></h4>
+                                    <span class="education" data-i18n="roadmap_data_2"></span>
+                                    <p class="desc" data-i18n="roadmap_data_2_desc"></p>
+                                </div>
+                            </li>
+                            <li data-aos="fade-up" data-aos-duration="1000">
+                                <div class="content">
+                                    <h4 class="title" data-i18n="roadmap_data_3_title"></h4>
+                                    <span class="education" data-i18n="roadmap_data_3"></span>
+                                    <p class="desc" data-i18n="roadmap_data_3_desc"></p>
+                                </div>
+                            </li>
+                            <li data-aos="fade-up" data-aos-duration="1000">
+                                <div class="content">
+                                    <h4 class="title" data-i18n="roadmap_data_4_title"></h4>
+                                    <span class="education" data-i18n="roadmap_data_4"></span>
+                                    <p class="desc" data-i18n="roadmap_data_4_desc"></p>
+                                </div>
+                            </li>
+                            <li data-aos="fade-up" data-aos-duration="1000">
+                                <div class="content">
+                                    <h4 class="title" data-i18n="roadmap_data_5_title"></h4>
+                                    <span class="education" data-i18n="roadmap_data_5"></span>
+                                    <p class="desc" data-i18n="roadmap_data_5_desc"></p>
+                                </div>
+                            </li>
+                            <li data-aos="fade-up" data-aos-duration="1000">
+                                <div class="content">
+                                    <h4 class="title" data-i18n="roadmap_data_6_title"></h4>
+                                    <span class="education" data-i18n="roadmap_data_6"></span>
+                                    <p class="desc" data-i18n="roadmap_data_6_desc"></p>
+                                </div>
+                            </li>
+                            <li data-aos="fade-up" data-aos-duration="1000">
+                                <div class="content">
+                                    <h4 class="title" data-i18n="roadmap_data_7_title"></h4>
+                                    <span class="education" data-i18n="roadmap_data_7"></span>
+                                    <p class="desc" data-i18n="roadmap_data_7_desc"></p>
+                                </div>
+                            </li>
+                            <li data-aos="fade-up" data-aos-duration="1000">
+                                <div class="content">
+                                    <h4 class="title" data-i18n="roadmap_data_8_title"></h4>
+                                    <span class="education" data-i18n="roadmap_data_8"></span>
+                                    <p class="desc" data-i18n="roadmap_data_8_desc"></p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Timeline Section End -->
+
+        <!-- Team Section Start -->
+        <section class="team__section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="section__title text-center" data-aos="fade-up" data-aos-duration="1000">
+                            <h2 class="title" data-i18n="team"></h2>
+                            <h3 data-i18n="team_subtitle"></h2>
+                            <p class="desc" data-i18n="team_desc"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="teamBox" data-aos="fade-up" data-aos-duration="1000">
+                            <div class="teamBox__figure">
+                                <img src="static/picture/team-01.jpg" alt="team">
+                                <ul class="teamBox__rating">
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                </ul>
+                            </div>
+                            <div class="teamBox__content">
+                                <a href="team.html" class="teamBox__title">Danilev</a>
+                                <span class="teamBox__desc" data-i18n="team_1"></span>
+                                <ul class="teamBox__social">
+                                    <li>
+                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fab fa-twitter"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fab fa-instagram"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="teamBox" data-aos="fade-up" data-aos-duration="1000">
+                            <div class="teamBox__figure">
+                                <img src="static/picture/team-02.jpg" alt="team">
+                                <ul class="teamBox__rating">
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                </ul>
+                            </div>
+                            <div class="teamBox__content">
+                                <a href="team.html" class="teamBox__title">Nick Lavie</a>
+                                <span class="teamBox__desc" data-i18n="team_2"></span>
+                                <ul class="teamBox__social">
+                                    <li>
+                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fab fa-twitter"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fab fa-instagram"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="teamBox" data-aos="fade-up" data-aos-duration="1000">
+                            <div class="teamBox__figure">
+                                <img src="static/picture/team-03.jpg" alt="team">
+                                <ul class="teamBox__rating">
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                </ul>
+                            </div>
+                            <div class="teamBox__content">
+                                <a href="team.html" class="teamBox__title">Andre Pass</a>
+                                <span class="teamBox__desc" data-i18n="team_3"></span>
+                                <ul class="teamBox__social">
+                                    <li>
+                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fab fa-twitter"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fab fa-instagram"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="teamBox" data-aos="fade-up" data-aos-duration="1000">
+                            <div class="teamBox__figure">
+                                <img src="static/picture/team-04.jpg" alt="team">
+                                <ul class="teamBox__rating">
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                </ul>
+                            </div>
+                            <div class="teamBox__content">
+                                <a href="team.html" class="teamBox__title">Wolf Carr</a>
+                                <span class="teamBox__desc" data-i18n="team_4"></span>
+                                <ul class="teamBox__social">
+                                    <li>
+                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fab fa-twitter"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fab fa-instagram"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="teamBox" data-aos="fade-up" data-aos-duration="1000">
+                            <div class="teamBox__figure">
+                                <img src="static/picture/team-05.jpg" alt="team">
+                                <ul class="teamBox__rating">
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                </ul>
+                            </div>
+                            <div class="teamBox__content">
+                                <a href="team.html" class="teamBox__title">Larry Rosenberger</a>
+                                <span class="teamBox__desc" data-i18n="team_5"></span>
+                                <ul class="teamBox__social">
+                                    <li>
+                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fab fa-twitter"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fab fa-instagram"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="teamBox" data-aos="fade-up" data-aos-duration="1000">
+                            <div class="teamBox__figure">
+                                <img src="static/picture/team-06.jpg" alt="team">
+                                <ul class="teamBox__rating">
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                </ul>
+                            </div>
+                            <div class="teamBox__content">
+                                <a href="team.html" class="teamBox__title">Jimmy Clinton</a>
+                                <span class="teamBox__desc" data-i18n="team_6"></span>
+                                <ul class="teamBox__social">
+                                    <li>
+                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fab fa-twitter"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fab fa-instagram"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="teamBox" data-aos="fade-up" data-aos-duration="1000">
+                            <div class="teamBox__figure">
+                                <img src="static/picture/team-07.jpg" alt="team">
+                                <ul class="teamBox__rating">
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                </ul>
+                            </div>
+                            <div class="teamBox__content">
+                                <a href="team.html" class="teamBox__title">Alston Reed</a>
+                                <span class="teamBox__desc" data-i18n="team_7"></span>
+                                <ul class="teamBox__social">
+                                    <li>
+                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fab fa-twitter"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fab fa-instagram"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="teamBox" data-aos="fade-up" data-aos-duration="1000">
+                            <div class="teamBox__figure">
+                                <img src="static/picture/team-08.jpg" alt="team">
+                                <ul class="teamBox__rating">
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                    <li><i class="fas fa-star"></i></li>
+                                </ul>
+                            </div>
+                            <div class="teamBox__content">
+                                <a href="team.html" class="teamBox__title">Edward Adam Davis</a>
+                                <span class="teamBox__desc" data-i18n="team_8"></span>
+                                <ul class="teamBox__social">
+                                    <li>
+                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fab fa-twitter"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fab fa-instagram"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Team Section End -->
+
+        <!-- Partner Section Start -->
+        <section class="partner__section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="section__title text-center" data-aos="fade-up" data-aos-duration="1000">
+                            <h2 class="title" data-i18n="partners"></h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="partner__wrapper" data-aos="fade-up" data-aos-duration="1000">
+                            <div class="swiper partner__slider">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="partner__image">
+                                            <img src="static/picture/partner_img01.png" alt="partner">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="partner__image">
+                                            <img src="static/picture/partner_img02.png" alt="partner">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="partner__image">
+                                            <img src="static/picture/partner_img03.png" alt="partner">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="partner__image">
+                                            <img src="static/picture/partner_img04.png" alt="partner">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="partner__image">
+                                            <img src="static/picture/partner_img05.png" alt="partner">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="partner__image">
+                                            <img src="static/picture/partner_img06.png" alt="partner">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="partner__image">
+                                            <img src="static/picture/partner_img07.png" alt="partner">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="partner__image">
+                                            <img src="static/picture/partner_img08.png" alt="partner">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="partner__image">
+                                            <img src="static/picture/partner_img09.png" alt="partner">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="partner__image">
+                                            <img src="static/picture/partner_img10.png" alt="partner">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Partner Section End -->
+
+        <!-- CAll To Action Start -->
+        <!-- <section class="call__to__action">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 m-auto">
+                        <div class="ctaBox__wrapper">
+                            <h2 class="ctaBox__title" data-i18n="subscribe_desc"></h2>
+                            <form action="#" method="post" class="ctaBox__form">
+                                <input type="email" name="email" class="form-control" data-i18n-placeholder="subscribe_email_placeholder">
+                                <button type="submit" class="btn btn-primary" data-i18n="subscribe_submit"></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        <!-- CAll To Action End -->
+
+        <!-- Footer Section Start -->
+        <footer class="footer__section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <button class="scroll-top scroll-to-target" data-target="html">
+                            <i class="fa-solid fa-arrow-up"></i>
+                        </button>
+                        <div class="document__wrapper">
+                            <!-- <h4 class="document__title">Read Documents</h4> -->
+                            <!-- <div class="document__list">
+                                <a id="whitepaper-link" href="http://www.UPAExchange.cn/static/files/UPAExchange-whitepaper-zh.pdf" download="UPAExchange-Whitepaper.pdf">
+                                    <span class="icon"><i class="fas fa-file-pdf"></i></span>
+                                    <span data-i18n="whitepaper"></span>
+                                </a>
+                                <a href="#">
+                                    <span class="icon"><i class="fas fa-file-pdf"></i></span>
+                                    Token Sale Terms
+                                </a>
+                                <a href="#">
+                                    <span class="icon"><i class="fas fa-file-pdf"></i></span>
+                                    Presentation
+                                </a>
+                                <a href="#">
+                                    <span class="icon"><i class="fas fa-file-pdf"></i></span>
+                                    Lightpaper
+                                </a>
+                            </div> -->
+                        </div>
+
+                        <div class="footer__widget">
+                            <div class="logo">
+                                <a href=""><img src="static/picture/logo.png" alt="logo"></a>
+                            </div>
+                            <!-- <ul class="footer__social">
+                                <li>
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                </li>
+                            </ul> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="footer__content text-center">
+                                <div class="content">
+                                    <p>
+                                        Copyright &copy; 2025.UPAExchange All rights reserved.</a>
+                                    </p>
+                                </div>
+                                <ul class="link">
+                                    <li><a href="" data-i18n="privacy"></a></li>
+                                    <li><a href="about.html" data-i18n="about"></a></li>
+                                    <li><a href="team.html" data-i18n="teams"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer Section End -->
+
+        <!-- Header Flyout Menu Start -->
+        <div class="flyoutMenu">
+            <div class="flyout__flip">
+                <div class="flyout__inner">
+                    <div class="menu__header-top">
+                        <div class="brand__logo">
+                            <a href="index.html"><img src="static/picture/logo.png" alt="logo"></a>
+                        </div>
+                        <!-- Close -->
+                        <div class="closest__btn">
+                            <i class="fas fa-close"></i>
+                        </div>
+                        <!-- Close -->
+                    </div>
+                    <div class="flyout__menu">
+                        <ul class="flyout-main__menu">
+                            <li><a href="" class="active" data-i18n="home"></a></li>
+                            <li class="has__dropdown">
+                                <a href="#" class="nav__link" data-i18n="nav"></a>
+                                <ul class="sub__menu">
+                                    <li><a class="scroll-to-target" data-target=".about__section" data-i18n="intro"></a></li>
+                                    <li><a class="scroll-to-target" data-target=".feature__section" data-i18n="products"></a></li>
+                                    <li><a class="scroll-to-target" data-target=".blog__section" data-i18n="ecosystem"></a></li>
+                                    <li><a class="scroll-to-target" data-target=".timeline__section" data-i18n="roadmap"></a></li>
+                                    <li><a class="scroll-to-target" data-target=".team__section" data-i18n="team"></a></li>
+                                    <li><a class="scroll-to-target" data-target=".partner__section" data-i18n="partners"></a></li>
+                                    <li><a class="scroll-to-target" data-target=".call__to__action" data-i18n="subscribe"></a></li>
+                                </ul>
+                            </li>
+                            <li><a href="about.html" data-i18n="about"></a></li>
+                            <li><a href="roadmap.html" data-i18n="roadmap"></a></li>
+                            <li><a href="team.html" data-i18n="teams"></a></li>
+                            <li><a href="contact.html" data-i18n="contact"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Header Flyout Menu End -->
+
+        <!-- JS -->
+        <script src="static/js/jquery-3.6.0.min.js"></script>
+        <script src="static/js/bootstrap.min.js"></script>
+        <script src="static/js/bootstrap.bundle.min.js"></script>
+        <script src="static/js/swiper-bundle.min.js"></script>
+        <script src="static/js/aos.js"></script>
+        <script src="static/js/accordion.min.js"></script>
+        <script src="static/js/jquery.syotimer.min.js"></script>
+        <script src="static/js/scripts.js"></script>
+        <script src="static/js/i18next.min.js"></script>
+        <script src="static/js/i18n-resources.js"></script>  <!-- 先加载资源 -->
+        <script src="static/js/i18n-init.js"></script>       <!-- 最后加载主逻辑 -->
+    </body>
+</html>
